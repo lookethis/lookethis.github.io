@@ -1,0 +1,116 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  list-style: none;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none;
+}
+
+#bgImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 70%;
+}
+
+#reset {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 60vh;
+}
+
+main #clock {
+  text-align: center;
+  font-size: min(150px, 15vw);
+}
+
+main #greeting {
+  font-size: min(48px, 5vw);
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 10px;
+}
+main form h3 {
+  font-size: min(25px, 4vw);
+}
+main form input {
+  width: calc(100% - 3vw);
+  margin-top: 10px;
+  color: inherit;
+  font-size: min(22px, 4vw);
+  text-align: center;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid whitesmoke;
+}
+
+#weather {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+#weather li {
+  margin-right: 0;
+}
+#weather li:first-child {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+#weather li:last-child {
+  margin-top: -10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#quote {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+
+  width: 80%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+  font-size: min(18px, 4vw);
+}
