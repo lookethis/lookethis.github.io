@@ -8,9 +8,16 @@
     <script src="JS/greetings.js" defer></script>
     <script src="JS/clock.js" defer></script>
     <script src="JS/quotes.js" defer></script>
+    <script src="JS/background.js" defer></script>
     <script src="JS/todo.js" defer></script>
+    <script src="JS/reset.js" defer></script>
   </head>
   <body>
+    <aside id="reset">
+      <i class="fas fa-sign-out-alt fa-lg"></i>
+      <span>Reset</span>
+    </aside>
+
     <main id="todo">
       <h1 id="clock">00:00</h1>
       <h2 class="hidden" id="greeting"></h2>
@@ -28,5 +35,12 @@
 
       <ul class="hidden" id="todo-list"></ul>
     </main>
+
+    <footer>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </footer>
   </body>
 </html>
