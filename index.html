@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="JS/greetings.js" defer></script>
+    <script src="JS/todo.js" defer></script>
+  </head>
+  <body>
+    <main id="todo">
+      <h1 id="clock">00:00</h1>
+      <h2 class="hidden" id="greeting"></h2>
+
+      <form class="hidden" id="login-form">
+        <!-- input태그는 form 안에 -->
+        <h3 id="loginGuide">Please write your name</h3>
+        <input type="text" maxlength="15" autofocus required />
+      </form>
+
+      <form class="hidden" id="todo-form">
+        <h3 id="toDoGuide">Please write your task</h3>
+        <input type="text" required />
+      </form>
+
+      <ul class="hidden" id="todo-list"></ul>
+    </main>
+  </body>
+</html>
